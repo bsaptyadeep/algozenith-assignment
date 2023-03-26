@@ -1,0 +1,106 @@
+.pricing-container {
+    background: linear-gradient(180deg, #05445E 0%, #002F42 100%);
+    border-radius: 16px;
+    filter: drop-shadow(0px 20px 75px rgba(5, 68, 94, 0.35));
+
+}
+
+.pricing-container-top {
+    padding-left: 40px;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+}
+
+.pricing-container-top-left {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.pricing-container-top-left p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.pricing-container-top-left h2 {
+    font-weight: 700;
+    font-size: 56px;
+    color: #818181;
+}
+
+.pricing-container-top-left h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    letter-spacing: -0.03em;
+    background: linear-gradient(90deg, #3F6FC1 0%, #05445E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pricing-container-right img {
+    background: linear-gradient(270deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.pricing-container-features {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.feature-container-pricing {
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    margin: 15px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.feature-container-pricing p {
+    margin: auto;
+    width: -webkit-fill-available;
+    margin-left: 10px;
+}
+
+.pricing-container-features button {
+    margin: 16px;
+}
+
+@media only screen and (max-width: 1767px) {
+    .pricing-container-top-left p {
+        font-size: 12px;
+    }
+
+    .pricing-container-top-left h2 {
+        font-size: 24px;
+    }
+
+    .pricing-container-top-left h1 {
+        font-size: 32px;
+    }
+
+    .feature-container-pricing p {
+        font-size: 12px;
+    }
+
+    .pricing-container-right img {
+        width: 200px;
+    }
+
+    .pricing-container-top-right img {
+        width: 200px;
+    }
+    .feature-container-pricing {
+        margin: 5px 10px;
+    }
+    .pricing-container-features {
+        padding: 20px;
+    }
+}

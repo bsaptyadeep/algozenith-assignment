@@ -1,38 +1,158 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-container {
+  background: linear-gradient(360deg, #021D28 12.88%, rgba(2, 29, 40, 0) 66.42%);
+  background: linear-gradient(270deg, #05445E 0%, #022534 100%);
+  display: flex;
+  flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-left {
+  margin: 150px 0px 150px 150px;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.top-left h1 {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 72px;
+  color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.top-left p {
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+}
+
+button {
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: #05445E;
+  background: linear-gradient(90.76deg, #FFFFFF 0%, #DFF6FF 144.63%);
+  border-radius: 8px;
+  min-width: 250px;
+  border: none;
+}
+
+.top-right img {
+  width: 100%;
+}
+
+.curriculum-btn {
+  margin-left: 30px;
+  background: linear-gradient(94.24deg, #033042 -0.03%, #005C83 99.97%);
+  color: #ffffff;
+  border: 1px solid;
+  border-image-source: linear-gradient(94.05deg, #FFFFFF -161.35%, rgba(255, 255, 255, 0) 99.97%);
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.features-box {
+  background: linear-gradient(#022534, #022534) padding-box, linear-gradient(180deg, #CFF1FF 0%, #2D5666 100%) border-box;
+  border: 1px solid transparent;
+  height: 64px;
+  width: 64px;
+  border-radius: 8px;
+}
+
+.top-bottom-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.feature-container {
+  margin: 0px 40px 20px 0px;
+}
+
+.feature-container p {
+  margin: auto;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 1767px) {
+  .top-left h1 {
+    font-size: 32px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .top-left p {
+    font-size: 12px;
+  }
+
+  .features-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+  }
+
+  button{
+    font-size: 12px;
+    padding: 0px;
+    min-width: 150px;
+    border-radius: 3px;
+  }
+}
+
+/* @media only screen and (max-width: 1767px) {
+  .top-left h1 {
+    font-size: 32px;
+  }
+
+  .top-left p {
+    font-size: 12px;
+  }
+
+  .features-box {
+    width: 30px;
+    height: 30px;
+  }
+  .top-left {
+    margin: 120px 0px 120px 120px;
+  }
+
+  button{
+    font-size: 12px;
+    padding: 0px;
+    min-width: 150px;
+  }
+} */
+
+@media only screen and (max-width: 1123px) {
+  .top-container{
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .top-left {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .top-left-button{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .curriculum-btn{
+    margin-left: 0px;
   }
 }
